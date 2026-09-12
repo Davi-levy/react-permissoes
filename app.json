@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "registro agricola",
+    "slug": "registro-agricola",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Precisamos da câmera para fotografar as visitas técnicas.",
+          "photosPermission": "Precisamos acessar suas fotos para anexar evidências já existentes."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Precisamos da sua localização para registrar onde a visita foi realizada."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Precisamos acessar seus contatos para vincular produtores às visitas."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Precisamos da câmera para fotografar as visitas técnicas.",
+        "NSLocationWhenInUseUsageDescription": "Precisamos da sua localização para registrar onde a visita foi realizada.",
+        "NSContactsUsageDescription": "Precisamos acessar seus contatos para vincular produtores às visitas."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_CONTACTS"
+      ]
+    }
+  }
+}
